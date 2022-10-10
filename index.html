@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
@@ -12,38 +13,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <header class="header-sheets">
-      <a href="./index.html" class="logo">Web<span class="logo-span">Studio</span></a>
-            <nav>  
+        <div class="conteiner-header">
+            <a href="./index.html" class="logo">Web<span class="logo-span">Studio</span></a>
+
+            <nav class="navigation">  
                    <ul class="nav-link">
-                        <li><a href="./index.html" class="link current"> Студія</a></li>
-                        <li><a href="./portfolio.html" class="link"> Портфоліо</a></li>
-                        <li><a href="" class="link"> Контакти</a></li>
+                        <li class="item"><a href="./index.html" class="link current"> Студія</a></li>
+                        <li class="item"><a href="./portfolio.html" class="link"> Портфоліо</a></li>
+                        <li class="item"><a href="" class="link"> Контакти</a></li>
                     </ul>
             </nav>
 
             <ul class="contacts">
-                <li><a class="contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li> <a class="contact-tel" href="tel:+38096111111">+380961111111</a></li>
+                <li class="item"><a class="contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="item"><a class="contact-tel" href="tel:+38096111111">+380961111111</a></li>
             </ul>
-        
+        </div>
     </header>
 
 
-<main>
+    <main>
         <section class="hero">
-            <h1 class="hero-lozung">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="hero-button cursor"> Замовити послугу</button>
-            
-        
+            <div class=""><h1 class="hero-lozung">Ефективні рішення для вашого бізнесу</h1>
+                <button type="button" class="hero-button cursor"> Замовити послугу</button>
+            </div>
         </section>
-       
+
+        <div class="conteiner">
         <section class="main-center">
+            <div class="">
             <h2 class="visually-hidden"> Hidden HEAD </h2>
         <ul class="list-items">
             <li>
@@ -66,6 +72,7 @@
                 <p class="list-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
         </ul>
+       </div>
       </section>
 
  <!-- чем мы занимаемся-->
@@ -124,9 +131,11 @@
 
             </ul>
         </section>
+    </div>
   </main>
 
    <footer class="footer">
+    <div class="conteiner">
     <a href="./index.html" class="logo-futter">Web<span class="logo-span-two">Studio</span></a>
        <address class="address">
         <ul>
@@ -136,7 +145,7 @@
         </ul>
 
        </address>
-
+    </div>
     </footer>
 </body>
 </html>
