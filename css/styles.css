@@ -81,7 +81,8 @@ ul {
 }
 
 .conteiner{
- 
+ padding-left: 15px;
+ padding-right: 15px;
     margin: 0 auto;
     width: 1200px;
    outline: 2px solid tomato;
@@ -92,6 +93,10 @@ ul {
 }
 
 /*хедер секция*/
+.link-head{
+  padding: 32px 0;
+  display: block;
+}
 
 .conteiner-header{ 
 
@@ -139,8 +144,8 @@ line-height: 1.4;
 letter-spacing: 0.02em;
 }
 .nav-link .item{
-padding-top: 32px;
-padding-bottom: 32px;
+  display: block;
+
 margin-right: 50px;
 }
 
@@ -158,8 +163,7 @@ color: var(--accent-color);
 
 
 .contacts{
-  padding-top: 32px;
-  padding-bottom: 32px;
+ 
  
  display: flex;
 }
@@ -246,13 +250,18 @@ border-radius: 4px;
   
   color: var(--white-color);
 }
-/* Конткйнейнер флекс*/
+/*-----Внимание к деталям*/
 
 .list-items{
   display: flex;
 }
 .list-name{
   padding-bottom: 10px;
+}
+.list-items > .list-info{
+  width: 270px;
+  flex-basis: calc(100% / 4);
+  margin-right: 30px;
 }
 .list-items .list-name{
 font-weight: 700;
@@ -263,14 +272,14 @@ text-transform: uppercase;
 color: var(--primery-text-color)
 }
 .list-items .list-text{
-  padding-right: 30px;
+ 
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--secodery-text-color)
 }
 .list-info:last-child{
-  padding-right: 0;
+  padding-right: 0px;
 }
 
 
@@ -287,9 +296,15 @@ line-height: 1.16 ;
 color: var(--primery-text-color);
 }
 .photo-list{
-  padding-bottom: 94px;
   display: flex;
-  gap: 30px;
+}
+.photo-items{
+  padding-bottom: 94px;
+ flex-basis:calc(100% / 3) ;
+ padding-right: 30px;
+}
+.photo-items:last-child{
+  padding-right: 0px;
 }
 
 /* наша команда*/
@@ -303,26 +318,19 @@ color: var(--primery-text-color);
  display: block;
  display: flex;
  padding-bottom: 94px;
- gap: 30px
- ;
+ gap: 30px;
+
+
 }
 .title-box{
-  background: #FFFFFF;
-/* material shadow v1 */
-
+ 
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
-  padding-bottom:px;
-  border: 1px solid #000;
   width: 270px;
   height: 368px;
 }
 
-.title-foto {
-  background:var(--background-color);
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
-}
+
 .person-name{
   padding-top: 30px;
   font-weight: 500;
@@ -357,9 +365,7 @@ color:var(--secodery-text-color)
 }
 
 
-.link{
-  padding-bottom: 9px;
-}
+
 .logo-futter{
   
   font-family: 'Raleway';
@@ -413,7 +419,7 @@ color:var(--secodery-text-color)
   justify-content: centers;
   display: flex;
   margin-top: 94px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .buttons-list{
  display: flex;
@@ -454,18 +460,29 @@ color:var(--secodery-text-color)
   color: var(--color-text-hiden-focus-portfolio);
 }
 /*---------------асортимент товаров-------------*/
-.list-photo{
-  background: #FFFFFF;
-border: 1px solid #EEEEEE;
-}
-
 .archives-list{
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  padding-bottom: 94px;
+
 }
+
+.list-kard{
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+  background: #FFFFFF;
+border: 1px solid #EEEEEE;
+}
+.list-kard:first-child{
+  margin-left: 0px;
+}
+.list-kard:nth-child(4){
+  margin-left: 0px;
+}
+.list-kard:nth-child(7){
+  margin-left: 0px;
+}
+
 /* заголовок и описание */
 .caption-portfolio{
   text-decoration: none;
@@ -473,6 +490,7 @@ border: 1px solid #EEEEEE;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  padding-bottom: 4px;
   
   letter-spacing: 0.06em;
   color:var(--primery-text-color)
@@ -486,5 +504,10 @@ border: 1px solid #EEEEEE;
   color: var(--secodery-text-color)
 }
 
-
+.portfolio-items{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
 
